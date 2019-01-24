@@ -8,7 +8,7 @@ this allows to change the plan sms cost for all the plan users, with out updatin
 - after the user is being verfied, he/she can send sms messages with the cost specified in the user plan 
 - and the user can also see its list of messages(content and date) and also its details+current balance
 
-
+## how to run
 1) in order to run this **you need an account in nexmo**
 2) export the following env paramters
 
@@ -26,6 +26,7 @@ this allows to change the plan sms cost for all the plan users, with out updatin
 6) **run the flask app**
 `python app.py`
 
+## available endpoints
 you can use one of the 5 endpoints
 ###### for registering new users :
 POST: http://127.0.0.1:8000/api/v1/users/register 
