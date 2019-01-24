@@ -1,6 +1,14 @@
 # kin
 this is a kin api demo written with flask,peewee(and sqlite),marshmallow,aargon, for registering users, verifying users, sending sms messages and viewing sms history
 
+## design thoughts:
+- the design idea was that each user belongs to a plan(like student, private(regular), team, company...) that contains the sms cost per message, and the initial credit for that plan.
+- each user being created have a FK to a plan(in this demo they all belong to a "regular" which is being created on the first request thanks to defaults), and the initial credit is copied from that plan to his/her user record to be used
+this allows to change the plan sms cost for all the plan users, with out updating all the users
+- after the user is being verfied, he/she can send sms messages with the cost specified in the user plan 
+- and the user can also see its list of messages(content and date) and also its details+current balance
+
+
 1) in order to run this **you need an account in nexmo**
 2) export the following env paramters
 
