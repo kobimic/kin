@@ -42,3 +42,7 @@ GET: http://127.0.0.1:8000/api/v1/users/messages
 
 ###### for viewing user current status
 GET: http://127.0.0.1:8000/api/v1/users/info
+
+
+
+
